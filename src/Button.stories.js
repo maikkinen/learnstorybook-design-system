@@ -134,7 +134,7 @@ export const buttonWrapper = (args) => (
       Outline
     </Button>
     <Button ButtonWrapper={ButtonWrapper} appearance="primary" isDisabled size="small">
-      Disabled
+      Disabled Primary
     </Button>
     <Button ButtonWrapper={ButtonWrapper} appearance="outline" size="small" containsIcon>
       <Icon icon="link" aria-label="Link" />

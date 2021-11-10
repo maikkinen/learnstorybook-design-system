@@ -6,7 +6,7 @@
 .pnp.js
 
 # not-for-your-eyes
-.secrets
+secrets
 
 # testing
 /coverage

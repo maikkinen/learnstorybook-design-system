@@ -22,7 +22,8 @@
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "sb": "start-storybook -p 6006 -s public",
-    "chromatic": "npx chromatic --project-token=cbee98a0233b"
+    "chromatic": "npx chromatic --project-token=cbee98a0233b",
+    "build-static-webapp":"expo build:web"
   },
   "eslintConfig": {
     "extends": [

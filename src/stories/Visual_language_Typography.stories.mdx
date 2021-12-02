@@ -18,7 +18,7 @@ import Flower from "./assets/flower.svg";
     font-weight: 900;
     font-size: 13px;
     color: #999;
-    letter-spacing: 6px;
+    letter-spacing: 2px;
     line-height: 24px;
     text-transform: uppercase;
     margin-bottom: 12px;
@@ -119,45 +119,73 @@ import Flower from "./assets/flower.svg";
 
 # Typography
 
-#### Create products that users love since day one
+##### Put some thought into text. It is likely displaying the most valuable information of your application.
 
 <div style={{ maxWidth: "600px", margin: "25px 0px 25px 50px" }}>
   <p>
-    “Here’s the harsh truth: People don’t care about your solution. They care
-    about finding the easiest, most convenient, most effective way to meet their
-    needs.”
-    <p>– Amy Jo</p>
+    "95% of the information on the web is written language. It is only logical
+    to say that a web designer should get good training in the main discipline
+    of shaping written information, in other words: Typography."
   </p>
+  <p>
+    "Optimizing typography is optimizing readability, accessibility,
+    usability(!), overall graphic balance.”
+  </p>
+  <p>– Oliver Reichenstein</p>
+</div>
+
+<div className="subheading">size and font - a good start</div>
+<p>
+  Being browsers’ default value, 16px is a good starting point for body text.
+  That also leaves room for smaller text when needed. As a rule of thumb, you
+  shouldn't use text smaller than 12px.
+</p>
+<p>
+  That being said, operative system providers make some exceptions to these.
+  Let’s take a quick look at iOS and Android’s specifications.
+</p>
+
+<div className="link-list" style={{ margin: "25px 0", maxHeight: "450px" }}>
+  <a
+    className="link-item"
+    href="https://storybook.js.org/docs/react/addons/addon-types"
+    target="_blank"
+  >
+    <div style={{ flexDirection: "row" }}>
+      <img src={Flower} alt="flower blob" />
+    </div>
+    <span>
+      <strong>Apple's default font San Francisco</strong>
+      Easy setup for TypeScript, SCSS and more.
+    </span>
+  </a>
+  <a
+    className="link-item"
+    href="https://storybook.js.org/docs/react/configure/webpack"
+    target="_blank"
+  >
+    <img src={StackAlt} alt="Build" />
+    <span>
+      <strong>Android's default font Roboto</strong>
+      How to customize webpack and Babel
+    </span>
+  </a>
 </div>
 
 <p>
-  At the beginning, your solution is a hypothesis – not a given. When you start
-  with delivering customer value, you realize there may be many possible
-  solutions to your customers’ problem – not just the one you have in mind.
+  Both operating systems use a neutral sans-serif font that’s legible even in
+  small sizes. The iOS default is San Francisco, and the corresponding Android
+  default is Roboto. San Francisco is available for Apple only, whereas{" "}
+  <a link="https://fonts.google.com/specimen/Roboto">Roboto</a> is freely
+  available.
 </p>
 
-<div className="subheading">Validate early and fast</div>
-
+<div className="subheading">Emphasize by de-emphasizing</div>
 <p>
-  The MVP (Minimum Viable Product) Canvas is a tool that helps you frame your
-  current ideas as hypotheses, and generate prioritized assumptions to test. It
-  helps you to validate your ideas quickly.
+  Making an important element even bigger, coloring it brighter or highlighting
+  it with borders, aren’t your only options. Emphasis and highlighting are
+  relative: a title pops if you de-emphasize other elements around it.
 </p>
-<p>
-  Why should one be interested in satisfying a small audience at first?
-
-“Here’s the punchline: if you’re innovating, you need to find and delight a small early market before you target that larger segment. Your odds of succeeding go WAY up when you test your idea with a small group of people who need what you’re offering, and will put up with cost, ridicule and friction to get those needs met.”
-
-  </p>
-
-<img
-  src={Flower}
-  alt="flower blob"
-  style={{ width: "160px", height: "160px" }}
-/>
-
-<div className="subheading">Configure</div>
-
 <div className="link-list">
   <a
     className="link-item"
@@ -169,8 +197,9 @@ import Flower from "./assets/flower.svg";
       <img src={Flower} alt="flower blob" />
     </div>
     <span>
-      <strong>Presets for popular tools</strong>
-      Easy setup for TypeScript, SCSS and more.
+      <strong>Don't make things bigger</strong>
+      Instead, consider adjusting some things smaller, and perhaps some bigger, to
+      create hierarchy.
     </span>
   </a>
   <a
@@ -180,8 +209,9 @@ import Flower from "./assets/flower.svg";
   >
     <img src={StackAlt} alt="Build" />
     <span>
-      <strong>Build configuration</strong>
-      How to customize webpack and Babel
+      <strong>Use All Caps</strong>
+      Besides looking awesome, this provides with a great tool for creating a nice
+      visual distinction for labels, buttons and short titles, for example.
     </span>
   </a>
   <a
@@ -191,8 +221,7 @@ import Flower from "./assets/flower.svg";
   >
     <img src={Colors} alt="colors" />
     <span>
-      <strong>Styling</strong>
-      How to load and configure CSS libraries
+      <strong>Don't overuse semantic colors</strong>
     </span>
   </a>
   <a

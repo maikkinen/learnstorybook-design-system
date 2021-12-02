@@ -8,7 +8,14 @@ import Plugin from "./assets/plugin.svg";
 import Repo from "./assets/repo.svg";
 import StackAlt from "./assets/stackalt.svg";
 
+import TrendingUp from "./assets/trending-up.svg";
+import Alert from "./assets/alert-octagon.svg";
+import Key from "./assets/key.svg";
+import Heart from "./assets/heart.svg";
+
 import Flower from "./assets/flower.svg";
+
+import MVP_canvas from "./assets/MVP_canvas.jpg";
 
 <Meta title="Foundation/Minimum Loveable Product 🧡" />
 
@@ -18,7 +25,7 @@ import Flower from "./assets/flower.svg";
     font-weight: 900;
     font-size: 13px;
     color: #999;
-    letter-spacing: 6px;
+    letter-spacing: 2px;
     line-height: 24px;
     text-transform: uppercase;
     margin-bottom: 12px;
@@ -55,7 +62,7 @@ import Flower from "./assets/flower.svg";
     transition: background 150ms ease-out, border 150ms ease-out, transform 150ms ease-out;
     color: #333333;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
   }
 
@@ -77,11 +84,10 @@ import Flower from "./assets/flower.svg";
   }
   
   .link-item img {
-    height: 360px;
-    width: 180px;
+    height: 50px;
+    width: 50px;
     margin-right: 15px;
     flex: none;
-    border: solid;
   }
 
   .link-item span {
@@ -119,14 +125,19 @@ import Flower from "./assets/flower.svg";
 
 # Minimum Loveable Product
 
-#### Create products that users love since day one
+#### Create products that users love since day one.
 
 <div style={{ maxWidth: "600px", margin: "25px 0px 25px 50px" }}>
   <p>
     “Here’s the harsh truth: People don’t care about your solution. They care
     about finding the easiest, most convenient, most effective way to meet their
     needs.”
-    <p>– Amy Jo</p>
+    <p>
+      – Amy Jo Kim,{" "}
+      <i>
+        one of the designers behind the Sims, Netflix and eBay, to name a few.
+      </i>
+    </p>
   </p>
 </div>
 
@@ -136,41 +147,17 @@ import Flower from "./assets/flower.svg";
   solutions to your customers’ problem – not just the one you have in mind.
 </p>
 
-<div className="subheading">Validate early and fast</div>
-
-<p>
-  The MVP (Minimum Viable Product) Canvas is a tool that helps you frame your
-  current ideas as hypotheses, and generate prioritized assumptions to test. It
-  helps you to validate your ideas quickly.
-</p>
-<p>
-  Why should one be interested in satisfying a small audience at first?
-
-“Here’s the punchline: if you’re innovating, you need to find and delight a small early market before you target that larger segment. Your odds of succeeding go WAY up when you test your idea with a small group of people who need what you’re offering, and will put up with cost, ridicule and friction to get those needs met.”
-
-  </p>
-
-<img
-  src={Flower}
-  alt="flower blob"
-  style={{ width: "160px", height: "160px" }}
-/>
-
-<div className="subheading">Configure</div>
-
 <div className="link-list">
   <a
     className="link-item"
     href="https://storybook.js.org/docs/react/addons/addon-types"
     target="_blank"
   >
-    <div style={{ flexDirection: "row" }}>
-      <img src={Flower} alt="flower blob" />
-      <img src={Flower} alt="flower blob" />
-    </div>
+    <img src={Heart} alt="heart" />
     <span>
-      <strong>Presets for popular tools</strong>
-      Easy setup for TypeScript, SCSS and more.
+      <strong>Make a small group happy</strong>
+      Skip evaluating whether a 22px or 18px margin is better this time. Instead,
+      free your resources by limiting your options by defining measurements in advance.
     </span>
   </a>
   <a
@@ -178,10 +165,11 @@ import Flower from "./assets/flower.svg";
     href="https://storybook.js.org/docs/react/configure/webpack"
     target="_blank"
   >
-    <img src={StackAlt} alt="Build" />
+    <img src={Key} alt="key" />
     <span>
-      <strong>Build configuration</strong>
-      How to customize webpack and Babel
+      <strong>Test your Hypotheses</strong>
+      Except for whitespace, question the need for everything. Question any new layout
+      patterns or functionalities. Question adding any borders, icons, any text.
     </span>
   </a>
   <a
@@ -189,10 +177,12 @@ import Flower from "./assets/flower.svg";
     href="https://storybook.js.org/docs/react/configure/styling-and-css"
     target="_blank"
   >
-    <img src={Colors} alt="colors" />
+    <img src={TrendingUp} alt="trending up" />
     <span>
-      <strong>Styling</strong>
-      How to load and configure CSS libraries
+      <strong>Measure</strong>
+      Aim for simple, consistent measures, components, and overall design. If you
+      find yourself fiddling with font sizes that have 4 decimals, ask yourself:
+      does this really bring value?
     </span>
   </a>
   <a
@@ -200,56 +190,152 @@ import Flower from "./assets/flower.svg";
     href="https://storybook.js.org/docs/react/get-started/setup#configure-storybook-for-your-stack"
     target="_blank"
   >
-    <img src={Flow} alt="flow" />
+    <img src={Alert} alt="alert" />
     <span>
-      <strong>Data</strong>
-      Providers and mocking for data libraries
+      <strong>Don’t Design Upfront</strong>
+      Decode and sum-up the 4th point here.
     </span>
   </a>
 </div>
 
-<div className="subheading">Learn</div>
+<div className="subheading">Early Validation with The Right people</div>
 
-<div className="link-list">
-  <a className="link-item" href="https://storybook.js.org/docs" target="_blank">
-    <img src={Repo} alt="repo" />
-    <span>
-      <strong>Storybook documentation</strong>
-      Configure, customize, and extend
-    </span>
-  </a>
-  <a
-    className="link-item"
-    href="https://storybook.js.org/tutorials/"
-    target="_blank"
-  >
-    <img src={Direction} alt="direction" />
-    <span>
-      <strong>In-depth guides</strong>
-      Best practices from leading teams
-    </span>
-  </a>
-  <a
-    className="link-item"
-    href="https://github.com/storybookjs/storybook"
-    target="_blank"
-  >
-    <img src={Code} alt="code" />
-    <span>
-      <strong>GitHub project</strong>
-      View the source and add issues
-    </span>
-  </a>
-  <a className="link-item" href="https://discord.gg/storybook" target="_blank">
-    <img src={Comments} alt="comments" />
-    <span>
-      <strong>Discord chat</strong>
-      Chat with maintainers and the community
-    </span>
-  </a>
+<p>
+  “You need to find and delight a small early market before you target that
+  larger segment. Your odds of succeeding go WAY up when you test your idea with
+  a small group of people who need what you’re offering (Amy Jo Kim).” Even if
+  you’re creating a product for one large customer, not all the end-users will
+  have the same needs, nor will they be interested in the same features - even
+  if they work for the same employer.
+</p>
+<p>
+  By targeting a specific, small enough group it’s easier to deliver a product
+  that answers a precise group of users’ needs accurately. Delivering a mediocre
+  compromise may give something to everyone, but nobody’s needs are truly met.
+</p>
+<p>
+  Finding these high-need, high-value early customers is an iterative process
+  that you can accelerate by writing down clear, testable hypotheses. Ask
+  yourself the following questions:
+</p>
+<p>
+  <i>What group of people will need and want our offering first?</i>
+  <br />
+  <i>What characteristics and behaviors will they have in common?</i>
+</p>
+<p>
+  And since customers are only interested in solutions that fulfill their needs,
+  remember to evaluate:
+</p>
+<p>
+  <i>
+    What relevant needs do these customers have right now that we could
+    potentially address?
+  </i>
+  <br />
+  <i>How are they currently getting those needs met?</i>
+  <br />
+  <i>Why is that unsatisfying?</i>
+</p>
+
+<p>
+  Finding answers to these questions also helps you to find what is the most
+  important information to the users (and why). That knowledge will save you
+  from many mistakes in the long run: once you know what’s important, you can
+  boldly focus on delivering only that at the beginning, leaving the second
+  priority information and functionalities for later. It helps you to avoid
+  feature creep – trying to add so many ‘we-need-this-immediately’ things that
+  you get nothing done well. Not to mention the legacy design and code that you
+  will be rewarded with when trying to implement too much too fast.
+</p>
+
+<div className="subheading">Articulate Your Key Assumptions</div>
+<p>
+  It often helps to write down your hypotheses. Don’t worry about hitting a
+  homerun at the start. The goal of writing down is to articulate your
+  hypotheses such that you can rapidly test and iterate them.{" "}
+</p>
+<p>
+  The MVP (Minimum Viable Product) Canvas is a handy tool. It helps you and your
+  team in crystallizing the essentials: value proposition, core offering and key
+  assumptions bare bones, without any decorations. You may have seen something
+  that looks similar at first, such as the Business Model Canvas (BMC). However,
+  the focus of the BMC is different: it aims at looking at your business in the
+  big picture in a more mature stage.{" "}
+</p>
+<p>
+  In the MVP Canvas, you write down assumed early customer group(s), their needs
+  that you would like to address, the value proposition, and your solution.
+</p>
+
+<img
+  src={MVP_canvas}
+  alt="partially pre-filled MVP canvas"
+  style={{ width: "875px", height: "360px" }}
+/>
+
+<p>
+  Also notice the ”early metrics” section. In the early stage, you likely don’t
+  have too much data to conduct comparative tests – and that’s ok! However, you
+  can choose a subjective metric connected to your product goals. These could
+  be:
+</p>
+
+<p>
+  <i>Preference: do users prefer our old version or new (redesign)</i>
+  <br />
+  <i>Value: willingness to pay for the product</i>
+  <br />
+  <i>
+    Uptake: willingness to use the product when it still offers a very limited
+    selection of features
+  </i>
+</p>
+<p>
+  For more, get your hands on the{" "}
+  <a link="https://gamethinking.io/playbook-old/">Game Thinking book.</a>
+</p>
+
+<div className="subheading">Small Product, Big Benefit</div>
+<p>
+  Re-defining existing software may create pressure to make a lot of changes
+  here and there at once. This gets easily very, very overwhelming! Focusing on
+  an MVP helps you to avoid designing and planning things too much upfront. Once
+  you’ve delivered an MVP, you’re in a much better position for evaluating both
+  your current position as well as your next steps.
+</p>
+
+<div className="subheading">Hit a Clear Target</div>
+<p>
+  Once you and your team have some initial idea of your first users who have a
+  burning need that you can answer with your solution, you have something to aim
+  at. When your target is clear, it’s easier to get there. If you realize that
+  your assumptions were wrong – perfect! You failed early enough! You saved a
+  ton of development hours, time, energy and effort when you realized it now.
+  Rather than building a product and launching it - only to realize that
+  potential customers’ reactions are lukewarm.
+</p>
+
+<div className="tip-wrapper">
+  <span className="tip">Further Reading</span>
+  For more, check out <strong>Amy Jo Kim's</strong> book <a href="https://gamethinking.io/playbook-old/">
+    Game Thinking
+  </a> for more on finding product-market fit, early validation and user testing.
+  The book is also available as ann audio book (narrated by the autohr), highly recommended.
+  <br />
+  <br />
+  Disclaimer: Amy Jo Kim is "a game designer and startup coach, whose design
+  credits include Rock Band, The Sims, Ultimate Online, eBay, Netflix, Lumosity
+  and Happify, to name a few."
 </div>
 
 <div className="tip-wrapper">
-  <span className="tip">Tip</span>Edit the Markdown in{" "}
-  <code>src/stories/Introduction.stories.mdx</code>
+  <span className="tip">Further Reading</span>
+  In his book <a href="https://mybilliondollarapp.com/how-to-build-a-billion-dollar-app-book/">
+    How to Build a Billion Dollar App
+  </a>, <strong>George Berkowski's</strong> gives advice that he wished he had had
+  when he was still an emerging entrepreneur. George Berkowski is one of the creators
+  of Hailo, the internationally successful taxi app. He walks the user through the
+  whole process, of starting from nothing but an idea, and taking that into a user-loved
+  product that's a billion dollar business. as an emerging entrepreneur.
 </div>

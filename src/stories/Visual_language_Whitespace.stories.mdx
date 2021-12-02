@@ -18,7 +18,7 @@ import Flower from "./assets/flower.svg";
     font-weight: 900;
     font-size: 13px;
     color: #999;
-    letter-spacing: 6px;
+    letter-spacing: 2px;
     line-height: 24px;
     text-transform: uppercase;
     margin-bottom: 12px;
@@ -119,42 +119,60 @@ import Flower from "./assets/flower.svg";
 
 # Whitespace
 
-#### Create products that users love since day one
+#### You need more whitespace than you think.
 
 <div style={{ maxWidth: "600px", margin: "25px 0px 25px 50px" }}>
   <p>
-    “Here’s the harsh truth: People don’t care about your solution. They care
-    about finding the easiest, most convenient, most effective way to meet their
-    needs.”
-    <p>– Amy Jo</p>
+    “Fail to the left, fail to the right.”
+    <p>– Erik G. Kennedy</p>
   </p>
 </div>
 
+<div className="subheading">
+  you don't need borders. you need more whitespace.
+</div>
+
 <p>
-  At the beginning, your solution is a hypothesis – not a given. When you start
-  with delivering customer value, you realize there may be many possible
-  solutions to your customers’ problem – not just the one you have in mind.
+  Whitespace is a unique thing in the sense that it’s the only thing that
+  doesn’t add anything to the UI; the only thing you can increase without
+  cluttering the UI.
 </p>
 
-<div className="subheading">Validate early and fast</div>
+<ol
+  style={{
+    fontWeight: "800",
+    color: "#838383",
+    padding: "25px 25px 25px 55px",
+    backgroundColor: "#e1e3e5",
+    borderRadius: "5px",
+  }}
+>
+  <li>Start adding whitespace around an element.</li>
+  <li>Add until there's definitely too much. That's your upper bound.</li>
+  <li>
+    Decrease until it’s clearly too little – then you know that’s the lower
+    limit.
+  </li>
+  <li>Iterate between the two values - until there's just the right amount.</li>
+</ol>
 
 <p>
-  The MVP (Minimum Viable Product) Canvas is a tool that helps you frame your
-  current ideas as hypotheses, and generate prioritized assumptions to test. It
-  helps you to validate your ideas quickly.
+  This technique, by the way, applies to a lot of UI work – rather than trying
+  to distill the exact pixel value on the first iteration, test on purpose what
+  is too much, and what is too little.
 </p>
 <p>
-  Why should one be interested in satisfying a small audience at first?
-
-“Here’s the punchline: if you’re innovating, you need to find and delight a small early market before you target that larger segment. Your odds of succeeding go WAY up when you test your idea with a small group of people who need what you’re offering, and will put up with cost, ridicule and friction to get those needs met.”
-
-  </p>
-
-<img
-  src={Flower}
-  alt="flower blob"
-  style={{ width: "160px", height: "160px" }}
-/>
+  Generous whitespace not only looks good but also solves many other problems:
+</p>
+<p>
+  1. Because elements are clearly close/far enough from each other, you don’t
+  have to make distinction and grouping with adding borders, which adds no
+  information, but increases clutter in UI.
+</p>
+<p>
+  2. You’re making your own life easy – it’s easier avoiding adding too much
+  content, because the space available is occupied already - by whitespace.
+</p>
 
 <div className="subheading">Configure</div>
 
@@ -250,6 +268,10 @@ import Flower from "./assets/flower.svg";
 </div>
 
 <div className="tip-wrapper">
-  <span className="tip">Tip</span>Edit the Markdown in{" "}
-  <code>src/stories/Introduction.stories.mdx</code>
+  <span className="tip">FYI</span>Big thanks to{" "}
+  <strong>Erik G. Kennedy </strong> - check out his{" "}
+  <a href="https://learnui.design/blog/7-rules-for-creating-gorgeous-ui-part-1.html#rule-3-double-your-whitespace">
+    7 Rules for Creating Gorgeous UIs
+  </a>{" "}
+  for more.
 </div>
